@@ -1,13 +1,13 @@
-# 🍔 FoodRush — App de Comida
+# 🔥 HabitUp — App de Hábitos y Retos Diarios
 
->JUAN CAMILO BAEZ BAUTISTA 
+> JUAN CAMILO BAEZ BAUTISTA- ACTIVIDAD 
 > Requisitos Funcionales y No Funcionales
 
 ---
 
 ## 📋 Descripción del Problema
 
-Los usuarios quieren pedir comida a domicilio de manera rápida y sencilla desde su celular o computador, sin necesidad de llamar por teléfono. Los restaurantes necesitan recibir y gestionar pedidos de forma eficiente. La solución es un sistema de delivery digital que conecte clientes, restaurantes y repartidores en una sola plataforma.
+Muchas personas quieren mejorar su vida adoptando nuevos hábitos (hacer ejercicio, leer, tomar agua, estudiar), pero se les olvida o se desmotivan a los pocos días porque no tienen un sistema que los acompañe. La solución es una app sencilla donde el usuario registra sus hábitos diarios, recibe retos semanales y puede ver su progreso en el tiempo para mantenerse motivado.
 
 ---
 
@@ -16,34 +16,28 @@ Los usuarios quieren pedir comida a domicilio de manera rápida y sencilla desde
 Los requisitos funcionales describen **qué debe hacer** el sistema.
 
 ### RF-01 — Registro e inicio de sesión
-El sistema debe permitir que los usuarios se registren con correo electrónico y contraseña, y que puedan iniciar sesión de forma segura.
+El sistema debe permitir que el usuario cree una cuenta con correo y contraseña, o inicie sesión con Google.
 
-### RF-02 — Búsqueda de restaurantes y productos
-El sistema debe permitir a los usuarios buscar restaurantes por nombre, categoría de comida o ubicación, y consultar el menú de cada restaurante.
+### RF-02 — Crear hábitos personalizados
+El sistema debe permitir al usuario crear hábitos propios indicando nombre, descripción, frecuencia (diario, semanal) y hora de recordatorio.
 
-### RF-03 — Gestión del carrito de compras
-El sistema debe permitir al usuario agregar, modificar y eliminar productos de un carrito de compras antes de confirmar el pedido.
+### RF-03 — Marcar hábito como completado
+El sistema debe permitir al usuario marcar cada hábito como completado en el día actual con un solo toque.
 
-### RF-04 — Realización del pedido
-El sistema debe permitir al usuario confirmar su pedido, seleccionar la dirección de entrega y elegir el método de pago (efectivo, tarjeta o billetera digital).
+### RF-04 — Retos semanales
+El sistema debe sugerir al usuario un reto nuevo cada semana (por ejemplo: "toma 8 vasos de agua al día por 7 días") que pueda aceptar o rechazar.
 
-### RF-05 — Seguimiento del pedido en tiempo real
-El sistema debe mostrar al usuario el estado de su pedido en tiempo real: recibido, en preparación, en camino y entregado.
+### RF-05 — Racha de días (streak)
+El sistema debe registrar y mostrar cuántos días consecutivos el usuario ha cumplido cada hábito, motivándolo a no romper la racha.
 
-### RF-06 — Historial de pedidos
-El sistema debe registrar y mostrar el historial de pedidos realizados por cada usuario, incluyendo fecha, productos y valor total.
+### RF-06 — Estadísticas y progreso
+El sistema debe mostrar al usuario un resumen visual de su progreso: porcentaje de cumplimiento semanal y mensual por cada hábito.
 
-### RF-07 — Calificación y reseñas
-El sistema debe permitir al usuario calificar el restaurante y el repartidor una vez entregado el pedido.
+### RF-07 — Notificaciones y recordatorios
+El sistema debe enviar una notificación al usuario a la hora configurada para recordarle completar su hábito del día.
 
-### RF-08 — Gestión de restaurantes (administrador)
-El sistema debe permitir a los administradores de restaurantes agregar, editar y eliminar productos del menú, y gestionar la disponibilidad del restaurante.
-
-### RF-09 — Notificaciones
-El sistema debe enviar notificaciones al usuario cuando el estado de su pedido cambie.
-
-### RF-10 — Panel de repartidor
-El sistema debe mostrar al repartidor los pedidos asignados, la ruta sugerida y permitirle actualizar el estado de la entrega.
+### RF-08 — Logros y recompensas
+El sistema debe desbloquear insignias o logros cuando el usuario alcance metas (7 días seguidos, 30 días, primer reto completado, etc.).
 
 ---
 
@@ -52,26 +46,23 @@ El sistema debe mostrar al repartidor los pedidos asignados, la ruta sugerida y 
 Los requisitos no funcionales describen **cómo debe comportarse** el sistema.
 
 ### RNF-01 — Rendimiento
-El sistema no debe tardar más de 3 segundos en cargar la lista de restaurantes disponibles. Si supera este tiempo, debe mostrar un indicador de carga.
+El sistema debe cargar la pantalla principal con los hábitos del día en menos de 2 segundos.
 
 ### RNF-02 — Disponibilidad
-El sistema debe estar disponible el 99% del tiempo (24/7), especialmente en horas pico de pedidos (11am–2pm y 6pm–9pm).
+El sistema debe funcionar sin conexión a internet para marcar hábitos, sincronizando los datos cuando haya conexión disponible.
 
 ### RNF-03 — Seguridad
-El sistema debe cumplir con la Ley de Protección de Datos Personales. Las contraseñas deben almacenarse cifradas y los pagos deben procesarse bajo protocolos seguros (HTTPS, SSL).
+El sistema debe proteger los datos personales del usuario y almacenar las contraseñas de forma cifrada, cumpliendo la Ley de Protección de Datos Personales.
 
 ### RNF-04 — Usabilidad
-El sistema debe ser intuitivo y fácil de usar para personas sin conocimientos técnicos. Un usuario nuevo debe poder realizar su primer pedido en menos de 5 minutos.
+La interfaz debe ser simple e intuitiva. Un usuario nuevo debe poder registrar su primer hábito en menos de 2 minutos.
 
 ### RNF-05 — Compatibilidad
-El sistema debe funcionar correctamente en los navegadores Chrome, Firefox y Safari, y en dispositivos móviles Android e iOS.
+El sistema debe funcionar en dispositivos Android (versión 8 o superior) e iOS (versión 13 o superior).
 
 ### RNF-06 — Escalabilidad
-El sistema debe soportar al menos 1.000 usuarios simultáneos sin degradar su rendimiento.
+El sistema debe soportar hasta 5.000 usuarios activos sin afectar el tiempo de respuesta.
 
 ### RNF-07 — Mantenibilidad
-El código del sistema debe estar documentado y estructurado de forma modular para facilitar futuras actualizaciones o correcciones.
-
-
-
+El código debe estar organizado por módulos y documentado, facilitando agregar nuevas funciones en el futuro.
 
